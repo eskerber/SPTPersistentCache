@@ -18,6 +18,7 @@
  specific language governing permissions and limitations
  under the License.
  */
+@import Foundation;
 #import <SPTPersistentCache/SPTPersistentCacheOptions.h>
 #import "SPTPersistentCacheObjectDescription.h"
 #import "SPTPersistentCacheDebugUtilities.h"
@@ -131,7 +132,7 @@ static NSUInteger SPTGuardedPropertyValue(NSUInteger proposedValue, NSUInteger m
     copy.garbageCollectionPriority = self.garbageCollectionPriority;
     copy.garbageCollectionQualityOfService = self.garbageCollectionQualityOfService;
 
-    return copy;
+    return nil;
 }
 
 #pragma mark Describing an Object
